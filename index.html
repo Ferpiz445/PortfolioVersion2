@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Felipe Monteiro — FullStack Developer</title>
+  <meta name="description" content="Felipe Monteiro — FullStack Developer specialized in React, Angular, Python & Laravel. Building modern web experiences from São Paulo.">
+  <meta property="og:title" content="Felipe Monteiro — FullStack Developer">
+  <meta property="og:description" content="Portfolio de Felipe Monteiro, desenvolvedor FullStack.">
+  <meta property="og:type" content="website">
+  <link rel="icon" type="image/x-icon" href="assets/favicon.png">
+ 
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;700;800&family=DM+Mono:wght@400;500&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;1,9..40,300&display=swap" rel="stylesheet">
+ 
+  <!-- AOS -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+ 
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+ 
+  <!--  NAV  -->
+  <header class="header-fixo" id="header">
+    <nav class="nav-inner">
+      <span class="nav-logo" id="logo-buttom">&lt;FM/&gt;</span>
+      <button class="menu-toggle" id="menu-toggle" aria-label="Abrir menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="menu" id="menu" role="navigation">
+        <li><a id="home-buttom">Home</a></li>
+        <li><a id="about-buttom">About</a></li>
+        <li><a id="portfolio-buttom">Portfolio</a></li>
+        <li><a id="skills-buttom">Skills</a></li>
+        <li><a id="contatos-buttom">Contacts</a></li>
+      </ul>
+      <a href="https://github.com/Ferpiz445" target="_blank" rel="noopener" class="nav-github">GitHub ↗</a>
+    </nav>
+  </header>
+ 
+  <main>
+ 
+    <!--  HERO  -->
+    <section id="home-tela" class="hero-section">
+      <div class="hero-grid"></div>
+      <div class="hero-glow"></div>
+      <div class="hero-content">
+        <span class="label-tag">FullStack Developer</span>
+        <h1 class="hero-title">
+          <span class="line">Felipe</span>
+          <span class="line accent">Monteiro</span>
+        </h1>
+        <p class="hero-sub">Building modern, performant web experiences — from São Paulo to the world. Specialized in React, Angular, Python &amp; Laravel.</p>
+        <div class="hero-actions">
+          <a id="hero-portfolio-btn" class="btn-primary">View my work</a>
+          <a id="hero-contact-btn" class="btn-ghost">Let's talk</a>
+        </div>
+      </div>
+      <!-- Scrolling image strip -->
+      <div class="strip-wrap">
+        <div class="strip-track">
+          <figure><img src="assets/code1.jpg" alt="" loading="lazy"></figure>
+          <figure><img src="assets/code2.jpg" alt="" loading="lazy"></figure>
+          <figure><img src="assets/code3.jpg" alt="" loading="lazy"></figure>
+          <figure><img src="assets/code4.jpg" alt="" loading="lazy"></figure>
+          <figure><img src="assets/code5.jpg" alt="" loading="lazy"></figure>
+          <figure><img src="assets/code6.jpg" alt="" loading="lazy"></figure>
+          <figure><img src="assets/code7.jpg" alt="" loading="lazy"></figure>
+          <figure><img src="assets/code8.jpg" alt="" loading="lazy"></figure>
+          <figure><img src="assets/code9.jpg" alt="" loading="lazy"></figure>
+          <figure><img src="assets/code10.jpg" alt="" loading="lazy"></figure>
+          <!-- duplicated for seamless loop -->
+          <figure><img src="assets/code1.jpg" alt="" loading="lazy"></figure>
+          <figure><img src="assets/code2.jpg" alt="" loading="lazy"></figure>
+          <figure><img src="assets/code3.jpg" alt="" loading="lazy"></figure>
+          <figure><img src="assets/code4.jpg" alt="" loading="lazy"></figure>
+          <figure><img src="assets/code5.jpg" alt="" loading="lazy"></figure>
+        </div>
+      </div>
+    </section>
+ 
+    <!--  ABOUT  -->
+    <section id="about-tela" class="about-section">
+      <div class="section-head" data-aos="fade-right" data-aos-duration="800">
+        <span class="label-tag">About me</span>
+        <h2 class="section-title">Who builds<br>these things?</h2>
+      </div>
+ 
+      <div class="about-grid" data-aos="fade-up" data-aos-duration="900" data-aos-delay="100">
+ 
+        <!-- Card 3D — mantido conforme pedido -->
+        <div class="card-side">
+          <div class="card-container">
+            <div class="card-wrap">
+              <div class="card">
+                <div class="card-bg" style="background-image: url(assets/FelipeMonteiro.jpeg);"></div>
+                <div class="card-info">
+                  <h1>Felipe Monteiro</h1>
+                  <p><span id="idade"></span> years old, FullStack Developer &amp; Gamer :P</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <a href="assets/resume.pdf" download class="btn-resume" id="resume">Download Resume ↓</a>
+          <div class="stat-row">
+            <div class="stat"><span class="stat-num">5+</span><span class="stat-label">Years coding</span></div>
+            <div class="stat"><span class="stat-num">12+</span><span class="stat-label">Technologies</span></div>
+          </div>
+        </div>
+ 
+        <!-- Text content -->
+        <div class="about-text">
+          <div class="about-block">
+            <span class="about-block-label">Full of Stacks</span>
+            <p>FullStack Developer with solid experience building websites and applications. Specialized in dynamic, responsive interfaces with a focus on performance and usability — with advanced knowledge in Python, PHP, TypeScript and JavaScript, and frameworks like React and Angular.</p>
+          </div>
+          <div class="about-block">
+            <span class="about-block-label">Experience &amp; Companies</span>
+            <p>My journey includes varied projects, from small business sites to integrations with the <strong>São Paulo City Hall</strong>, which allowed me to develop a collaborative and flexible approach to problem solving at scale.</p>
+          </div>
+          <div class="about-block">
+            <span class="about-block-label">Determined &amp; Curious</span>
+            <p>Beyond technical work, I am passionate about continuous learning and new technologies. I constantly improve through courses and developer communities — my goal is to keep growing and contribute to innovative projects that positively impact people's lives.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+ 
+    <!--  PORTFOLIO  -->
+    <section id="portfolio-tela" class="portfolio-section">
+      <div class="section-head" data-aos="fade-down" data-aos-duration="800">
+        <span class="label-tag">Portfolio</span>
+        <h2 class="section-title">Modern, Functional<br>&amp; Creative</h2>
+        <p class="section-sub">Here are some projects and websites I built for companies!</p>
+      </div>
+ 
+      <div class="portfolio-grid" data-aos="fade-up" data-aos-duration="800" data-aos-delay="100">
+        <div class="portfolio-card" id="oktohub">
+          <div class="portfolio-img-wrap">
+            <img src="assets/okto.png" alt="Okto project" loading="lazy">
+          </div>
+          <div class="portfolio-card-body">
+            <div class="portfolio-tags"><span class="tag">Web</span><span class="tag">UI/UX</span></div>
+            <h3>Okto</h3>
+            <p>Custom web solution built for a client, balancing visual polish with technical performance.</p>
+          </div>
+        </div>
+ 
+        <div class="portfolio-card" id="transcribe">
+          <div class="portfolio-img-wrap">
+            <img src="assets/transcribe.png" alt="Transcribe project" loading="lazy">
+          </div>
+          <div class="portfolio-card-body">
+            <div class="portfolio-tags"><span class="tag">App</span><span class="tag">FullStack</span><span class="tag">AI integrations</span></div>
+            <h3>Transcribe</h3>
+            <p>Full-stack transcription application built for speed, accuracy, and ease of use.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+ 
+    <!--  SKILLS  -->
+    <section id="skills-tela" class="skills-section">
+      <div class="section-head" data-aos="fade-right" data-aos-duration="800">
+        <span class="label-tag">Skills</span>
+        <h2 class="section-title">Front-End, Back-End<br>and more...</h2>
+        <p class="section-sub">The most developed and practiced skills of this developer.</p>
+      </div>
+ 
+      <div class="skills-grid" data-aos="zoom-out" data-aos-duration="800" data-aos-anchor-placement="top-center">
+ 
+        <!-- Front-End -->
+        <div class="skills-card front-card">
+          <div class="skills-card-head"><span class="destaque-card front">Front-End</span><h3>HTML</h3></div>
+          <div class="skills-status done"><span>✓</span> Experienced</div>
+        </div>
+        <div class="skills-card front-card">
+          <div class="skills-card-head"><span class="destaque-card front">Front-End</span><h3>CSS</h3></div>
+          <div class="skills-status done"><span>✓</span> Experienced</div>
+        </div>
+        <div class="skills-card front-card">
+          <div class="skills-card-head"><span class="destaque-card front">Front-End</span><h3>JavaScript</h3></div>
+          <div class="skills-status done"><span>✓</span> Experienced</div>
+        </div>
+        <div class="skills-card front-card">
+          <div class="skills-card-head"><span class="destaque-card front">Front-End</span><h3>TypeScript</h3></div>
+          <div class="skills-status done"><span>✓</span> Experienced</div>
+        </div>
+        <div class="skills-card front-card">
+          <div class="skills-card-head"><span class="destaque-card front">Front-End</span><h3>Angular</h3></div>
+          <div class="skills-status done"><span>✓</span> Experienced</div>
+        </div>
+        <div class="skills-card front-card building">
+          <div class="skills-card-head"><span class="destaque-card front">Front-End</span><h3>React</h3></div>
+          <div class="skills-status wip"><span>↻</span> Building...</div>
+        </div>
+ 
+        <!-- Back-End -->
+        <div class="skills-card back-card">
+          <div class="skills-card-head"><span class="destaque-card back">Back-End</span><h3>PHP</h3></div>
+          <div class="skills-status done"><span>✓</span> Experienced</div>
+        </div>
+        <div class="skills-card back-card">
+          <div class="skills-card-head"><span class="destaque-card back">Back-End</span><h3>Laravel</h3></div>
+          <div class="skills-status done"><span>✓</span> Experienced</div>
+        </div>
+        <div class="skills-card back-card">
+          <div class="skills-card-head"><span class="destaque-card back">Back-End</span><h3>Python</h3></div>
+          <div class="skills-status done"><span>✓</span> Experienced</div>
+        </div>
+        <div class="skills-card back-card building">
+          <div class="skills-card-head"><span class="destaque-card back">Back-End</span><h3>Node.js</h3></div>
+          <div class="skills-status wip"><span>↻</span> Building...</div>
+        </div>
+ 
+        <!-- DB / Tools -->
+        <div class="skills-card db-card">
+          <div class="skills-card-head"><span class="destaque-card db">Database</span><h3>MySQL</h3></div>
+          <div class="skills-status done"><span>✓</span> Experienced</div>
+        </div>
+        <div class="skills-card git-card">
+          <div class="skills-card-head"><span class="destaque-card git">Version Control</span><h3>Git &amp; GitHub</h3></div>
+          <div class="skills-status done"><span>✓</span> Experienced</div>
+        </div>
+ 
+      </div>
+    </section>
+ 
+    <!--  CONTACTS  -->
+    <section id="contatos-tela" class="contacts-section">
+      <div class="contacts-bg-strip">
+        <div class="strip-track strip-track--slow">
+          <figure><img src="assets/code11.jpg" alt="" loading="lazy"></figure>
+          <figure><img src="assets/code12.jpg" alt="" loading="lazy"></figure>
+          <figure><img src="assets/code13.jpg" alt="" loading="lazy"></figure>
+          <figure><img src="assets/code14.jpg" alt="" loading="lazy"></figure>
+          <figure><img src="assets/code15.jpg" alt="" loading="lazy"></figure>
+          <figure><img src="assets/code16.jpg" alt="" loading="lazy"></figure>
+          <figure><img src="assets/code17.jpg" alt="" loading="lazy"></figure>
+          <figure><img src="assets/code11.jpg" alt="" loading="lazy"></figure>
+          <figure><img src="assets/code12.jpg" alt="" loading="lazy"></figure>
+          <figure><img src="assets/code13.jpg" alt="" loading="lazy"></figure>
+        </div>
+      </div>
+      <div class="contacts-overlay">
+        <div data-aos="fade-up" data-aos-duration="800">
+          <span class="label-tag">Contacts</span>
+          <h2 class="contact-heading">Let's build<br><span class="accent">something great.</span></h2>
+          <p class="section-sub">Whether you have a project in mind or just want to connect — I'm open to a good conversation.</p>
+          <div class="contacts-cards">
+            <a href="https://www.linkedin.com/in/felipe-monteiro-97aa01233/" target="_blank" rel="noopener" class="contact-card" id="linkedin">
+              <div class="contact-card-icon">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+              </div>
+              <div>
+                <span class="contact-card-label">LinkedIn</span>
+                <p>Felipe Monteiro</p>
+              </div>
+            </a>
+            <a href="mailto:fe.monteiro2002@gmail.com" class="contact-card" id="gmail">
+              <div class="contact-card-icon">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M24 5.457v13.909c0 .904-.732 1.636-1.636 1.636h-3.819V11.73L12 16.64l-6.545-4.91v9.273H1.636A1.636 1.636 0 0 1 0 19.366V5.457c0-2.023 2.309-3.178 3.927-1.964L5.455 4.64 12 9.548l6.545-4.91 1.528-1.145C21.69 2.28 24 3.434 24 5.457z"/></svg>
+              </div>
+              <div>
+                <span class="contact-card-label">Gmail</span>
+                <p>fe.monteiro2002@gmail.com</p>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+ 
+  </main>
+
+  <!--  FOOTER  -->
+  <footer>
+    <span class="footer-logo">&lt;FELIPE/&gt;</span>
+    <p class="footer-copy">&copy; <span id="ano"></span> Felipe Monteiro</p>
+    <p class="footer-desc">Landing page · FullStack Developer Portfolio</p>
+  </footer>
+ 
+  <script src="script.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>AOS.init({ once: true, offset: 80 });</script>
+</body>
+</html>
