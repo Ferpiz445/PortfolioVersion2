@@ -363,51 +363,65 @@ strong { font-weight: 400; color: var(--text); }
 .portfolio-card-body p { font-size: 13px; color: var(--muted); }
 
 /* ── SKILLS ── */
-.skills-section {
-  padding: 6rem 4rem;
-  background: var(--bg2);
+.skills-section{padding:6rem 4rem;background:var(--bg2)}
+ 
+.skills-inner{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:5rem;
+  align-items:start;
 }
-.skills-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-  gap: 1rem;
+ 
+/* LEFT side: chips */
+.skills-left .section-head{margin-bottom:2rem}
+ 
+.skill-categories{display:flex;flex-direction:column;gap:2.5rem}
+ 
+.skill-category-label{
+  font-family:var(--font-mono);
+  font-size:11px;letter-spacing:.12em;text-transform:uppercase;
+  color:var(--accent);margin-bottom:1rem;display:block;
 }
-.skills-card {
-  background: var(--bg3);
-  border: 0.5px solid var(--border);
-  border-radius: var(--r);
-  padding: 1.25rem 1.25rem 1rem;
-  display: flex; flex-direction: column; gap: 1rem;
-  transition: border-color 0.2s, transform 0.2s;
+ 
+.skill-list{display:flex;flex-wrap:wrap;gap:.6rem}
+ 
+.skill-chip{
+  font-family:var(--font-mono);font-size:12px;
+  padding:.4rem .9rem;border-radius:4px;
+  border:.5px solid var(--border);
+  color:var(--text);
+  transition:border-color .2s,color .2s;
+  cursor:default;
 }
-.skills-card:hover { border-color: var(--border-h); transform: translateY(-2px); }
-.skills-card.building { opacity: 0.7; }
-
-.skills-card-head { display: flex; flex-direction: column; gap: 6px; }
-.skills-card-head h3 {
-  font-family: var(--font-display);
-  font-size: 1.15rem; font-weight: 700;
+.skill-chip:hover{border-color:var(--border-h);color:var(--accent)}
+.skill-chip.building{color:var(--muted);border-style:dashed}
+.skill-legend{font-family:var(--font-mono);font-size:11px;color:var(--muted);margin-top:1.5rem}
+ 
+/* RIGHT side: experience cards */
+.skills-right{display:flex;flex-direction:column;gap:1.25rem;padding-top:.5rem}
+ 
+.experience-card{
+  background:var(--bg3);
+  border:.5px solid var(--border);
+  border-radius:var(--r);
+  padding:1.75rem;
+  transition:border-color .2s,transform .2s;
 }
-
-.destaque-card {
-  font-family: var(--font-mono);
-  font-size: 10px; letter-spacing: 0.1em; text-transform: uppercase;
-  padding: 3px 8px; border-radius: 3px;
-  display: inline-block; width: fit-content;
+.experience-card:hover{border-color:var(--border-h);transform:translateY(-2px)}
+ 
+.exp-role{
+  font-family:var(--font-display);
+  font-size:1.05rem;font-weight:700;
+  margin-bottom:4px;
 }
-.destaque-card.front { background: rgba(200,240,96,0.1); color: var(--accent); }
-.destaque-card.back  { background: rgba(240,232,96,0.1); color: var(--accent2); }
-.destaque-card.db    { background: rgba(96,200,240,0.1); color: #60c8f0; }
-.destaque-card.git   { background: rgba(240,160,96,0.1); color: #f0a060; }
-
-.skills-status {
-  display: flex; align-items: center; gap: 6px;
-  font-family: var(--font-mono); font-size: 11px;
-  padding-top: 0.75rem;
-  border-top: 0.5px solid var(--border);
+.exp-org{
+  font-family:var(--font-mono);
+  font-size:11px;color:var(--accent);
+  letter-spacing:.06em;
+  margin-bottom:.9rem;
 }
-.skills-status.done { color: var(--accent); }
-.skills-status.wip  { color: var(--muted); }
+.exp-desc{font-size:14px;color:var(--muted);margin-bottom:1rem;line-height:1.6}
+.exp-tags{display:flex;flex-wrap:wrap;gap:.5rem}
 
 /* ── CONTACTS ── */
 .contacts-section {
@@ -510,6 +524,7 @@ footer {
   .card-side { flex-direction: column; align-items: center;}
   .card-wrap { width: 260px; }
   .about-grid { gap: 2rem; }
+  .skills-inner { display: flex; flex-wrap: wrap;}
 
   footer { flex-direction: column; text-align: center; padding: 1.5rem; }
 }
